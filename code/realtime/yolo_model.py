@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 def detect_objects(image):
     # Загрузить модель YOLOv8
-    model = YOLO('yolov8m.pt')
+    model = YOLO('best.pt')
 
     # Обработать изображение
     results = model(image)
